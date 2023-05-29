@@ -9,7 +9,6 @@ int main(int argc, char** argv) {
     int rank, size;
     char processor_name[MPI_MAX_PROCESSOR_NAME];
 
-    MPI_Info_create(&info);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     MPI_Get_processor_name(processor_name, &size);
