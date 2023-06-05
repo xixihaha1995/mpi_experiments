@@ -13,7 +13,7 @@ set nbr_parent = 6
 set nbr_child = 30
 set nbr_total = `expr $nbr_parent + $nbr_child`
 
-setenv MPI_UNIVERSE_SIZE 10
+# setenv MPI_UNIVERSE_SIZE 10
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
 make
