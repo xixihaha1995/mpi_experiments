@@ -10,4 +10,4 @@
 
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
-mpiexec_mpt ./mpiapp.exe
+mpiexec_mpt ./parent.exe
