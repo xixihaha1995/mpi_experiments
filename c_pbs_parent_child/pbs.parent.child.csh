@@ -1,12 +1,14 @@
 #!/bin/csh
 
-set nbr_parent = 6
-set nbr_child = 30
-set nbr_total = `expr $nbr_parent + $nbr_child`
 
 #PBS -N lwu4_toy
 #PBS -A WYOM0106
 #PBS -l walltime=00:01:00
+
+set nbr_parent = 6
+set nbr_child = 30
+set nbr_total = `expr $nbr_parent + $nbr_child`
+
 #PBS -q economy
 #PBS -j oe
 #PBS -k eod
