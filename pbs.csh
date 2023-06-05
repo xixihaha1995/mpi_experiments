@@ -15,5 +15,5 @@
 # mkdir -p $TMPDIR
 
 ###Run real.exe
-cd /glade/work/lichenwu/NWP/WRF/test/em_real
+cd /glade/u/home/lichenwu/project/mpi_experiments
 mpiexec_mpt ./mpiapp.exe
