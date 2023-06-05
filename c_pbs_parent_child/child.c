@@ -15,6 +15,8 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Get_processor_name(processor_name, &namelen);
 
-    printf("Child: rank=%d, size=%d, name=%s\n", rank, world_size, processor_name);
+    printf("Child: rank=%d from world %d (size=%d) and parents world %d, name=%s\n", rank, 
+    MPI_COMM_WORLD, world_size, parent_comm, processor_name);
+    MPI_Finalize();
     return 0;
 }
