@@ -7,9 +7,9 @@
 #PBS -q economy
 #PBS -j oe
 #PBS -k eod
-#PBS -l select=1:mpiprocs=10
+#PBS -l select=1:mpiprocs=36
 
-set nbr_parent = 6
+set nbr_parent = 30
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
 make
