@@ -1,14 +1,16 @@
 CC = mpicc
 CFLAGS = -Wall -Wextra
 
-all: mpiapp.exe 
+all: parent.exe child.exe
 
-mpiapp.exe: mpiapp.c
-	$(CC) $(CFLAGS) -o mpiapp.exe mpiapp.c
+parent.exe: parent.c
+	$(CC) $(CFLAGS) -o parent.exe parent.c
 
+child.exe: child.c
+	$(CC) $(CFLAGS) -o child.exe child.c
 
-run: mpiapp.exe
-	mpirun -np 2 ./mpiapp.exe
+run: parent.exe
+	mpirun -np 2 ./parent.exe
 
 clean:
-	rm -f mpiapp.exe
+	rm -f parent.exe child.exe
