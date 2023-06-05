@@ -7,7 +7,7 @@
 #PBS -l walltime=00:01:00
 #PBS -q regular
 #PBS -j oe
-#PBS -l select=1:ncpus=2:mpiprocs=2
+#PBS -l select=2:ncpus=1:mpiprocs=1
 
 ### Set TMPDIR as recommended
 # setenv TMPDIR /glade/scratch/$USER/temp
