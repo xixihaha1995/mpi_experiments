@@ -9,6 +9,11 @@
 #PBS -k eod
 #PBS -l select=1:mpiprocs=40
 
+echo "Running on $(hostname)"
+cat $PBS_NODEFILE
+cat $PBS_HOSTFILE
+
+
 set nbr_parent = 32
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
