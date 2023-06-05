@@ -23,7 +23,7 @@ void spawn_children(void) {
 
     MPI_Info info;
     MPI_Info_create(&info);
-    MPI_Info_set(info, "MPI_UNIVERSE_SIZE", nbr_child); 
+    MPI_Info_set(info, "MPI_UNIVERSE_SIZE", "3"); 
 
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
