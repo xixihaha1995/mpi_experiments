@@ -6,8 +6,8 @@
 #PBS -q economy
 #PBS -j oe
 #PBS -k eod
-#PBS -l select=1
-setenv MPI_UNIVERSE_SIZE 6
+#PBS -l select=1:ncpus=10:mpiprocs=10
+setenv MPI_UNIVERSE_SIZE 10
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
-mpiexec_mpt -np 2 ./parent.exe
+mpiexec_mpt -spawn -np 2 ./parent.exe
