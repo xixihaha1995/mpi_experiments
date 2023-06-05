@@ -10,4 +10,6 @@
 setenv MPI_UNIVERSE_SIZE 10
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
+make
 mpiexec_mpt -spawn -np 2 ./parent.exe
+make clean
