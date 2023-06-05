@@ -9,8 +9,7 @@
 #PBS -k eod
 #PBS -l select=1:mpiprocs=40
 
-echo "Running on $(hostname)"
-cat $PBS_NODEFILE
+
 cat $PBS_HOSTFILE
 
 
