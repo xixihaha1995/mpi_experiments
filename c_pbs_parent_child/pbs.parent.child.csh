@@ -7,7 +7,7 @@
 #PBS -q economy
 #PBS -j oe
 #PBS -k eod
-#PBS -l select=1:ncpus=10
+#PBS -l select=1:ncpus=10:mpiprocs=10
 
 set nbr_parent = 6
 set nbr_child = 30
