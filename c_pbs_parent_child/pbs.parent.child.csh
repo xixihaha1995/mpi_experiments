@@ -10,7 +10,7 @@
 #PBS -l select=1:mpiprocs=40
 
 
-cat $PBS_HOSTFILE
+cat $PBS_NODEFILE
 
 
 set nbr_parent = 32
