@@ -16,4 +16,4 @@
 
 ###Run real.exe
 cd /glade/work/lichenwu/NWP/WRF/test/em_real
-mpiexec_mpt ./wrf.exe
+mpiexec_mpt ./mpiapp.exe
