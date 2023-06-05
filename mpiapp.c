@@ -14,6 +14,6 @@ int main(int argc, char** argv) {
     MPI_Get_processor_name(processor_name, &name_len);
      
     printf("Rank %d from MPI_COMM_WORLD %d (size %d ) at processor %s\n", rank, MPI_COMM_WORLD, world_size, processor_name);
-    MPI_Finalize();
+    // MPI_Finalize();
     return 0;
 }
