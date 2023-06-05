@@ -7,13 +7,9 @@
 #PBS -q economy
 #PBS -j oe
 #PBS -k eod
-#PBS -l select=1:mpiprocs=40
+#PBS -l select=2:mpiprocs=40
 
-
-cat $PBS_NODEFILE
-
-
-set nbr_parent = 32
+set nbr_parent = 3
 ###Run
 cd /glade/u/home/lichenwu/project/mpi_experiments/c_pbs_parent_child
 make
